@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524728156211",
+    "project_id": "jajan-log",
+    "storage_bucket": "jajan-log.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524728156211:android:398889c0b9279be7336346",
+        "android_client_info": {
+          "package_name": "com.example.jajanlog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Pr8pzDoXLODVRL_gpG981xX_oQkLdFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
