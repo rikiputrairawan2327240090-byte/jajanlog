@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:jajanlog/screens/home_screen.dart';
 import 'package:jajanlog/screens/sign_up_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -32,6 +33,15 @@ class _SignInScreenState extends State<SignInScreen> {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text,
+      );
+
+      if (!mounted) return;
+
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => const HomeScreen(),
+        ),
       );
     } on FirebaseAuthException catch (e) {
       if (!mounted) return;
